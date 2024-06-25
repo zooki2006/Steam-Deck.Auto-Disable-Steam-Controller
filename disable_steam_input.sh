@@ -8,6 +8,7 @@ set -e
 
 #script_install_dir="/home/deck/.local/share/scawp/SDADSC"
 tmp_dir="/tmp/scawp/SDADSC"
+test -f /home/deck/disable_autoswitch && exit 0;
 
 mkdir -p "$tmp_dir"
 
